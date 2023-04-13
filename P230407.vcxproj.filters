@@ -8,9 +8,6 @@
     <Filter Include="Engine">
       <UniqueIdentifier>{a66c9b22-0f52-4773-a4c7-2b4d97d0725f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Engine\Unreal">
-      <UniqueIdentifier>{05dfb361-21d2-4db1-9af0-8b0260619d7c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Engine\소스 파일">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -18,6 +15,12 @@
     <Filter Include="Engine\헤더 파일">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="소스파일">
+      <UniqueIdentifier>{692cfb8c-50cc-46f7-8b12-5da207cc385f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더파일">
+      <UniqueIdentifier>{b4dfc0f3-c5c7-4329-91cf-ca004047104f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -36,16 +39,16 @@
     <ClInclude Include="Actor.h">
       <Filter>Engine\헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="GameEngine.h">
-      <Filter>Engine\Unreal</Filter>
-    </ClInclude>
-    <ClInclude Include="MyGameEngine.h">
-      <Filter>Engine\Unreal</Filter>
-    </ClInclude>
     <ClInclude Include="Goal.h">
       <Filter>Engine\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Floor.h">
+      <Filter>Engine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGameEngine.h">
+      <Filter>헤더파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine.h">
       <Filter>Engine\헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -59,25 +62,25 @@
     <ClCompile Include="Monster.cpp">
       <Filter>Engine\소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Engine\소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="World.cpp">
       <Filter>Engine\소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Actor.cpp">
       <Filter>Engine\소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="GameEngine.cpp">
-      <Filter>Engine\Unreal</Filter>
-    </ClCompile>
-    <ClCompile Include="MyGameEngine.cpp">
-      <Filter>Engine\Unreal</Filter>
-    </ClCompile>
     <ClCompile Include="Floor.cpp">
       <Filter>Engine\소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Goal.cpp">
+      <Filter>Engine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGameEngine.cpp">
+      <Filter>소스파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine.cpp">
       <Filter>Engine\소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
