@@ -78,6 +78,8 @@ void GameEngine::Load(std::string Filename)
     }
 
     fclose(file);
+ 
+    GetWorld()->Sort();
 }
 
 void GameEngine::Run()
