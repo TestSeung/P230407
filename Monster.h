@@ -1,10 +1,12 @@
 #pragma once
-#include"Actor.h"
+#include "Actor.h"
 
 class AMonster : public AActor
 {
+public:
 	AMonster();
-	virtual~AMonster() override;
+	AMonster(int NewX, int NewY, char NewShape = 'P');
 
+	virtual ~AMonster();
 };
 

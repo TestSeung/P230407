@@ -1,6 +1,5 @@
 #pragma once
 
-
 class AActor
 {
 public:
@@ -8,14 +7,13 @@ public:
 	AActor(int NewX, int NewY, char NewShape);
 	virtual ~AActor();
 
-	virtual void Input(); 
+	virtual void Input();
 	virtual void Tick();
 	virtual void Render();
 
-public: // protected로 해야함 X,Y값 컨트롤러로 사용
+public:
 	int X;
 	int Y;
 	char Shape;
-
 };
 

@@ -1,30 +1,16 @@
-#include<iostream>
-#include "World.h"
-#include "Wall.h"
-#include "Player.h"
-#include "Monster.h"
-#include "Ground.h"
-#include "Destination.h"
-#include "Actor.h"
+#include <iostream>
+#include "MyGameEngine.h"
+
 
 using namespace std;
 
-class TestActor : public AActor
-{
-
-};
 
 int main()
-{
-	UWorld* World = new UWorld();
-	World->SpawnActor(new APlayer());
-	World->SpawnActor(new ADestination());
-	World->SpawnActor(new AGround());
-	World->SpawnActor(new AMonster());
-	World->SpawnActor(new AWall());
+{ 
+	MyGameEngine* Engine = new MyGameEngine();
 
-	delete World;
-
+	Engine->Init();
+	Engine->Run();
 
 
 

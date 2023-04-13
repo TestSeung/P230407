@@ -1,11 +1,11 @@
 #pragma once
-#include"Actor.h"
+#include "Actor.h"
 
 class AWall : public AActor
 {
+public:
 	AWall();
-	virtual ~AWall() override;
-
-	void Block();
+	AWall(int NewX, int NewY, char NewShape = '*');
+	virtual ~AWall();
 };
 
