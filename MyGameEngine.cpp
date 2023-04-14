@@ -6,6 +6,12 @@
 #include "Goal.h"
 #include "World.h"
 
+#include "SDL.h"
+
+#pragma comment(lib, "SDL2.lib")
+#pragma comment(lib, "SDL2main.lib")
+
+
 MyGameEngine* MyGameEngine::Instance = nullptr;
 
 MyGameEngine::MyGameEngine()

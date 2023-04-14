@@ -20,11 +20,17 @@ public:
 		return (LHS->SortOrder) < (RHS->SortOrder); //오른쪽이 크면 바꿈
 	}
 
+	
+
 public:
 	int X;
 	int Y;
 	char Shape;
 	int SortOrder = 1;
 	bool bIsCollision = false; //충돌효과
+
+	int R;
+	int G;
+	int B;
 };
 

@@ -1,5 +1,9 @@
 #pragma once
 #include <string>
+#include "SDL.h"
+
+#pragma comment(lib, "SDL2.lib")
+#pragma comment(lib, "SDL2main.lib")
 
 class GameEngine
 {
@@ -11,9 +15,14 @@ public:
 	virtual void LoadLevel(std::string Filename);
 	void Run();
 	void Stop();
-	int KeyCode;
 
 	inline class UWorld* GetWorld() const { return World; }
+	
+	int KeyCode;
+	
+	SDL_Window* MyWindow;
+	SDL_Renderer* MyRenderer;
+	SDL_Event MyEvent;
 
 protected:
 	void Input();

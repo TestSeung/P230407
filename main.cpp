@@ -4,16 +4,12 @@
 
 using namespace std;
 
-
-int main()
-{ 
-	 //½Ì±ÛÅÏ ÆÐÅÏ
-	
-
+int SDL_main(int argc, char* argv[])
+{
 	GEngine->Init();
 	GEngine->Run();
 
-	// delete Engine;
+	delete GEngine;
 
 	return 0;
 }
