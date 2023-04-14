@@ -8,9 +8,10 @@ public:
 	virtual ~GameEngine();
 
 	virtual void Init();
-	virtual void Load(std::string Filename);
+	virtual void LoadLevel(std::string Filename);
 	void Run();
 	void Stop();
+	int KeyCode;
 
 	inline class UWorld* GetWorld() const { return World; }
 
@@ -20,6 +21,7 @@ protected:
 	void Render();
 
 	bool bIsRunning = true;
+	
 
 	class UWorld* World;
 };

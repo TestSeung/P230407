@@ -10,11 +10,14 @@
 
 #include <iostream>
 #include <algorithm>
+#include <conio.h> // enter안쳐도 입력
 
 GameEngine::GameEngine()
 {
 	bIsRunning = true;
 	World = nullptr;
+    KeyCode = 0;
+
 }
 
 GameEngine::~GameEngine()
@@ -31,7 +34,7 @@ void GameEngine::Init()
 	World = new UWorld();
 }
 
-void GameEngine::Load(std::string Filename)
+void GameEngine::LoadLevel(std::string Filename)
 {
     FILE* file;
     char c;
@@ -104,13 +107,14 @@ void GameEngine::Stop()
 
 void GameEngine::Input()
 {
-	World->Input();
+    KeyCode = _getch();
 
 }
 
 void GameEngine::Tick()
 {
 	World->Tick();
+    //싱글턴이라 받아서 쓸수있음
 
 }
 

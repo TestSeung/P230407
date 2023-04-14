@@ -7,12 +7,13 @@ using namespace std;
 
 int main()
 { 
-	MyGameEngine* Engine = new MyGameEngine();
+	 //½Ì±ÛÅÏ ÆĞÅÏ
+	
 
-	Engine->Init();
-	Engine->Run();
+	GEngine->Init();
+	GEngine->Run();
 
-	delete Engine;
+	// delete Engine;
 
 	return 0;
 }
