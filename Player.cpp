@@ -1,11 +1,14 @@
 #include "Player.h"
 #include "MyGameEngine.h"
+#include "World.h"
+
 
 APlayer::APlayer()
 {
 	Shape = 'P';
 	X = 2;
 	Y = 2;
+	bIsCollision = false;
 }
 
 APlayer::APlayer(int NewX, int NewY, char NewShape)
@@ -16,19 +19,36 @@ APlayer::APlayer(int NewX, int NewY, char NewShape)
 
 void APlayer::Tick()
 {
+
 	switch (GEngine->KeyCode)
 	{
 	case 'w':
-		Y--;
+		//미리가봄
+		if(!GEngine->GetWorld()->CheckCollision(X, Y - 1))
+		{
+			Y--;
+		}
 		break;
 	case 's':
-		Y++;
+		if (!GEngine->GetWorld()->CheckCollision(X, Y + 1))
+		{
+			Y++;
+		}
 		break;
 	case 'a':
-		X--;
+		if (!GEngine->GetWorld()->CheckCollision(X - 1, Y))
+		{
+			X--;
+		}
 		break;
 	case 'd':
-		X++;
+		//FPS 리얼타임 중요
+
+		
+		if (!GEngine->GetWorld()->CheckCollision(X + 1, Y))
+		{
+			X++;
+		}
 		break;
 	case 'q':
 		GEngine->Stop();

@@ -15,6 +15,8 @@ public:
 	virtual void Render();
 
 	void Sort();
+	//Pysics
+	bool CheckCollision(int X, int Y);
 
 public:
 	std::vector<AActor*> Actors;

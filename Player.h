@@ -9,6 +9,7 @@ public:
 
 	virtual void Tick() override;
 
+
 	virtual ~APlayer();
 };
 

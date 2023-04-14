@@ -25,5 +25,6 @@ public:
 	int Y;
 	char Shape;
 	int SortOrder = 1;
+	bool bIsCollision = false; //충돌효과
 };
 
